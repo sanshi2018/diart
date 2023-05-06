@@ -154,7 +154,7 @@ class MicrophoneAudioSource(AudioSource):
             channels=1,
             samplerate=sample_rate,
             latency=0,
-            blocksize=self.block_size,
+            dtype="float32",
             callback=self._read_callback,
             device=device,
         )
